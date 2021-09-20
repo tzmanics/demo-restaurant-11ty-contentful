@@ -1,0 +1,30 @@
+{
+  "name": "demo-restaurant-11ty-contentful",
+  "version": "0.0.0",
+  "description": "A demo restaurant site using 11ty, Netlify, and Netlify Functions (ˆ ڡ ˆ)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful.git"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "netlify",
+    "contentful",
+    "serverless",
+    "functions",
+    "ssg"
+  ],
+  "author": "Tara Z. Manicsic <tzmanics@gmail.dev> (https://tzmanics.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful/issues"
+  },
+  "homepage": "https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
