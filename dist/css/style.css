@@ -1,0 +1,5 @@
+@import '../../node_modules/contentfull-belly-styles/styles.css';
+
+body {
+  background: red;
+}

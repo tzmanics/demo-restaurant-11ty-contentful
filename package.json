@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "A demo restaurant site using 11ty, Netlify, and Netlify Functions (ˆ ڡ ˆ)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,10 @@
   "homepage": "https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "@netlify/demo-restaurant-sites-data": "^0.3.1",
+    "contentfull-belly-styles": "^0.1.0-alpha",
+    "sass": "^1.42.1"
   }
 }
