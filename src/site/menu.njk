@@ -1,0 +1,21 @@
+---
+title: Menu
+layout: layouts/base.njk
+---
+<main class="menu-page">
+  <h1 class="section-title">Menu</h1>
+  {% for item in menu %}
+  <section class="memu-item">
+    <div class="menu-item-header">
+      <h2 class="menu-item-title">{{ item.title }}</h2>
+      <span class="menu-item-price">{{ item.currency }}{{ item.price }}</span>
+      {% if item.photo %}
+      <img src="{{ item.photo.imageUrl }}" alt="{{ item.photo.caption }}">
+      {% endif %}
+    </div>
+    <p class="menu-item-description">
+      {{ item.description }}
+    </p>
+  </section>
+  {% endfor %}
+</main>    
