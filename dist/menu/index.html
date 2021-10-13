@@ -8,8 +8,50 @@
     />
   </head>
   <body>
-    <main class="menu-page">
+    <div class="home-grid">
+      <aside class="sidebar">
+        <a href="/">
+          <img src="/logo.svg" alt="" />
+        </a>
+        <nav>
+        <ul class="main-nav-list">
+          <li class="nav-item">
+            <a href="/menu" class="nav-item-link">
+              <img src="/images/menu-icon.svg" alt="sample alt" />
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        </nav>
+        <footer class="main-footer">
+          <p class="main-footer-text">
+            Repo:
+            <a href="https://github.com/bencodezen/demo-restaurant-vue3-ts-contentful"
+              >GitHub</a
+            >
+          </p>
+          <p class="main-footer-text">
+            Built with <a href="https://v3.vuejs.org">Vue 3</a> and
+            <a href="https://www.netlify.com">Netlify</a>
+          </p>
+        </footer>
+      </aside>
+      <main class="menu-page">
   <h1 class="section-title">Menu</h1>
+  
+  <section class="memu-item">
+    <div class="menu-item-header">
+      <h2 class="menu-item-title">My Apollo-Cheese</h2>
+      <span class="menu-item-price">$11</span>
+      
+      <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1634050693/image_6_smfpep.jpg" alt="liar liar cheese on fire">
+      
+    </div>
+    <p class="menu-item-description">
+      <p>Why hello Greece, nice cheese you got there, it&#39;d be a shame if someone SET IT ON FIRE. That&#39;s right, saganaki at its best. Sorry not sorry.</p>
+
+    </p>
+  </section>
   
   <section class="memu-item">
     <div class="menu-item-header">
@@ -20,7 +62,8 @@
       
     </div>
     <p class="menu-item-description">
-      *All* the nachos. *All* the toppings. Not a tall tower but stacked shallow and wide for optimum topping distributions for all.
+      <p><em>All</em> the nachos. <em>All</em> the toppings. Not a tall tower but stacked shallow and wide for optimum topping distributions for all.</p>
+
     </p>
   </section>
   
@@ -33,7 +76,8 @@
       
     </div>
     <p class="menu-item-description">
-      A *distressingly* large tower of tacos with every filling you can imagine, and far more tacos than you need, and everyone will be talking about this forever.
+      <p>A <em>distressingly</em> large tower of tacos with every filling you can imagine, and far more tacos than you need, and everyone will be talking about this forever.</p>
+
     </p>
   </section>
   
@@ -46,7 +90,8 @@
       
     </div>
     <p class="menu-item-description">
-      This noodle dish will make you *sink* in your seat!
+      <p>This noodle dish will make you <em>sink</em> in your seat!</p>
+
     </p>
   </section>
   
@@ -59,7 +104,8 @@
       
     </div>
     <p class="menu-item-description">
-      This is our salad bar, keep eatin&#39; to your heart&#39;s content!
+      <p>This is our salad bar, keep eatin&#39; to your heart&#39;s content!</p>
+
     </p>
   </section>
   
@@ -72,24 +118,10 @@
       
     </div>
     <p class="menu-item-description">
-      This pizza is so good that you&#39;ll want to yell at people.
+      <p>This pizza is so good that you&#39;ll want to yell at people.</p>
+<p>&quot;I&#39;LL HAVE WHAT I&#39;M HAVING&quot; echoes throughout the streets.</p>
+<p>You&#39;re home.</p>
 
-&quot;I&#39;LL HAVE WHAT I&#39;M HAVING&quot; echoes throughout the streets.
-
-You&#39;re home.
-    </p>
-  </section>
-  
-  <section class="memu-item">
-    <div class="menu-item-header">
-      <h2 class="menu-item-title">My Apollo-Cheese</h2>
-      <span class="menu-item-price">$11</span>
-      
-      <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632797559/cullan-smith-cNY_0C2U46c-unsplash_1_qqsdey.jpg" alt="this cheese is on fire">
-      
-    </div>
-    <p class="menu-item-description">
-      Why hello Greece, nice cheese you got there, it&#39;d be a shame if someone SET IT ON FIRE. That&#39;s right, saganaki at its best. Sorry not sorry.
     </p>
   </section>
   
@@ -102,7 +134,8 @@ You&#39;re home.
       
     </div>
     <p class="menu-item-description">
-      Everyone loves lightly friend fish fillets, especially at 1:15am.
+      <p>Everyone loves lightly friend fish fillets, especially at 1:15am.</p>
+
     </p>
   </section>
   
@@ -115,11 +148,13 @@ You&#39;re home.
       
     </div>
     <p class="menu-item-description">
-      This meal is pretty sus. It&#39;s the sneakiest pasta you&#39;ll ever eat, because it&#39;ll surprise you with a delicious punch in the face. You&#39;ll never want to vent on this one.
+      <p>This meal is pretty sus. It&#39;s the sneakiest pasta you&#39;ll ever eat, because it&#39;ll surprise you with a delicious punch in the face. You&#39;ll never want to vent on this one.</p>
+
     </p>
   </section>
   
 </main>    
 
+    </div>
   </body>
 </html>

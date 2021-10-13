@@ -8,6 +8,35 @@
     />
   </head>
   <body>
-    {{ content | safe }}
+    <div class="home-grid">
+      <aside class="sidebar">
+        <a href="/">
+          <img src="/logo.svg" alt="" />
+        </a>
+        <nav>
+        <ul class="main-nav-list">
+          <li class="nav-item">
+            <a href="/menu" class="nav-item-link">
+              <img src="/images/menu-icon.svg" alt="sample alt" />
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+        </nav>
+        <footer class="main-footer">
+          <p class="main-footer-text">
+            Repo:
+            <a href="https://github.com/bencodezen/demo-restaurant-vue3-ts-contentful"
+              >GitHub</a
+            >
+          </p>
+          <p class="main-footer-text">
+            Built with <a href="https://v3.vuejs.org">Vue 3</a> and
+            <a href="https://www.netlify.com">Netlify</a>
+          </p>
+        </footer>
+      </aside>
+      {{ content | safe }}
+    </div>
   </body>
 </html>

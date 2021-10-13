@@ -31,6 +31,7 @@
   "dependencies": {
     "@netlify/demo-restaurant-sites-data": "^0.3.1",
     "contentfull-belly-styles": "^0.1.0-alpha",
+    "marked": "^3.0.7",
     "sass": "^1.42.1"
   }
 }

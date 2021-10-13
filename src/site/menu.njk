@@ -14,7 +14,7 @@ layout: layouts/base.njk
       {% endif %}
     </div>
     <p class="menu-item-description">
-      {{ item.description }}
+      {{ item.description | marked | safe }}
     </p>
   </section>
   {% endfor %}
