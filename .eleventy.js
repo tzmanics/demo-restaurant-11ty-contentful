@@ -3,7 +3,10 @@ const fs = require('fs-extra');
 const marked = require('marked');
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy({ 'src/css': 'css' });
+  eleventyConfig.addPassthroughCopy({
+    'src/css': 'css',
+    'src/images': 'images',
+  });
 
   // Markdown filter
   eleventyConfig.addFilter('marked', (str) => marked(str));
