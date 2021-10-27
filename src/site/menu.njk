@@ -4,18 +4,23 @@ layout: layouts/base.njk
 ---
 <main class="menu-page">
   <h1 class="section-title">Menu</h1>
+  <div class="section-intro">The menu for the restaurant</div>
   {% for item in menu %}
-  <section class="memu-item">
+  <section class="menu-item">
     <div class="menu-item-header">
       <h2 class="menu-item-title">{{ item.title }}</h2>
-      <span class="menu-item-price">{{ item.currency }}{{ item.price }}</span>
-      {% if item.photo %}
-      <img src="{{ item.photo.imageUrl }}" alt="{{ item.photo.caption }}">
-      {% endif %}
+      <span class="menu-item-price">{{ item.currency }}{{ item.price }}</span>  
     </div>
     <p class="menu-item-description">
       {{ item.description | marked | safe }}
     </p>
+    {% if item.photo %}
+    <figure>
+      <img src="{{ item.photo.imageUrl }}" alt="{{ item.photo.caption }}">
+      <figcaption>{{ item.photo.caption }} - <a href="{{ item.photo.attribution.url }}"> Photo credit </a>
+      </figcaption>
+    </figure>
+    {% endif %}
   </section>
   {% endfor %}
 </main>    

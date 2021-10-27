@@ -11,9 +11,17 @@
     <div class="home-grid">
       <aside class="sidebar">
         <a href="/">
-          <img src="/logo.svg" alt="" />
+          <img src="/images/logo.svg" alt="" />
         </a>
         <nav>
+        <ul class="main-nav-list">
+          <li class="nav-item">
+            <a href="/" class="nav-item-link">
+              <img src="src/images/about-icon.svg" alt="sample alt" />
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
         <ul class="main-nav-list">
           <li class="nav-item">
             <a href="/menu" class="nav-item-link">
@@ -36,108 +44,50 @@
           </p>
         </footer>
       </aside>
-      <header>
-  <h1>ContentfullBelly</h1>
-  <p>All the things. On your plate.</p>
-  <div class="address">
+       <main>
+    <h1 class="section-title">ContentfullBelly</h1>
+    <p class="section-strapline">All the things. On your plate.</p>
+    <div class="section-intro">
+    </div>
     
-    <p> 
-      SE Ladd &amp; 16th
-    </p>
+    <h2 class="section-title">Our diners say nice things</h2>
     
-    <p> 
-       Portland
-    </p>
-    
-    <p> 
-      OR 97214
-    </p>
-    
-    <p> 
-      USA
-    </p>
-    
-  </div>
-  <p>
-    Reservations: <a href="bookings@napkinsdiet.com">bookings@napkinsdiet.com</a>, 503 555 1975
-  </p>
-  <abbr title="Vegetarian" class="diet-icon">V</abbr>
-</header>
-
-<hr />
-
-<h1></h1>
-<div></div>
-<p>
-  <a href="/menu">Look at the menu</a>
-</p>
-
-<h2>Testimonials</h2>
-
-<div>
-  <h3>I can&#39;t beleive it&#39;s not batter</h3>
-  <p>Hungry Horace, <time>2021-09-10T20:00+01:00</time> </p>
-  <div>I usually need everything to be deep fried, but everything here was tasty and light and healthy. Even when it felt like it should be bad for me.</div>
+    <div v-for="item of testimonials" class="testimonial">
+      <p class="testimonial-meta">On <time>2021-09-10T20:00+01:00</time>, Hungry Horace said: </p>
+      <h3>I can&#39;t beleive it&#39;s not batter</h3>
+      <div><p>I usually need everything to be deep fried, but everything here was tasty and light and healthy. Even when it felt like it should be bad for me.</p>
 </div>
+    </div>
+    
 
-
-<h2>Gallery</h2>
-<div class="gallery">
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1634050693/image_6_smfpep.jpg" alt="liar liar cheese on fire" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632798589/natasha-bhogal-7sStoaxfJh0-unsplash_1_gjjqqf.jpg" alt="nacho papa&#39;s either" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632798345/shannon-nickerson-Qc2ePRQhV5c-unsplash_1_kl9qph.jpg" alt="taco bout how good this is" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632798109/the-creative-exchange-oO3sXE73unQ-unsplash_1_mlblbt.jpg" alt="pad thai a bow on it, it&#39;s done" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632797903/heather-barnes-FaIb6he_a7Q-unsplash_1_bsyolk.jpg" alt="lettuce tempt you" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632797559/cullan-smith-cNY_0C2U46c-unsplash_1_qqsdey.jpg" alt="this cheese is on fire" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632797353/sahand-hoseini-BMVAYjPf6mU-unsplash_1_xa1q6c.jpg" alt="just a pizza" >
-  
-  <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1632797181/antonio-mendes-i5hzQrNBbR0-unsplash_2_dhjacx.jpg" alt="nemo + friends" >
-  
-  <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2534&amp;q=80" alt="I&#39;m Pasta - suspiciously delicious" >
-  
-
-</div>
-
-<hr />
-
-<footer>
-  <h2>Opening hours</h2>
-  <div class="hours">
-    
-    <p>Monday - Closed</p>
-    
-    <p>Tuesday - 08:00 - 23:00</p>
-    
-    <p>Wednesday - 08:00 - 23:00</p>
-    
-    <p>Thursday - 08:00 - 23:00</p>
-    
-    <p>Friday - 08:00 - late</p>
-    
-    <p>Saturday - 08:00 - late</p>
-    
-    <p>Sunday - 10:00 - 22:00</p>
-    
-  </div>
-
-  <h2>Social</h2>
-  <ul>
-    
-    <li>Twitter : 
-      <a href="https://twitter.com/napkinsdiet">@NapkinsDiet </a>
-    </li>
-    
-  </ul>
+    <h2 class="section-title">Opening hours</h2>
+    <div class="hours">
       
-  </footer>
-</div> 
+      <p> Monday - Closed </p>
+      
+      <p> Tuesday - 08:00 - 23:00 </p>
+      
+      <p> Wednesday - 08:00 - 23:00 </p>
+      
+      <p> Thursday - 08:00 - 23:00 </p>
+      
+      <p> Friday - 08:00 - late </p>
+      
+      <p> Saturday - 08:00 - late </p>
+      
+      <p> Sunday - 10:00 - 22:00 </p>
+      
+    </div>
+
+    <h2 class="section-title">We're ever so social</h2>
+    <ul>
+      
+      <li> Twitter : <a href="https://twitter.com/napkinsdiet">@NapkinsDiet </a>
+      </li>
+      
+    </ul>
+  </main>
+<header>
     </div>
   </body>
 </html>
