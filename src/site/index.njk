@@ -2,34 +2,32 @@
 title: Home
 layout: layouts/base.njk
 ---
- <main>
-    <h1 class="section-title">{{ info.name }}</h1>
-    <p class="section-strapline">{{ info.strapline}}</p>
-    <div class="section-intro">
-    </div>
-    
-    <h2 class="section-title">Our diners say nice things</h2>
+<main>
+  <h1 class="section-title">{{ info.name }}</h1>
+  <p class="section-strapline">{{ info.strapline }}</p>
+  <div class="section-intro"> </div>
+  <h2 class="section-title">Our diners say nice things</h2>
+  <div class="testimonial">
     {% for item in testimonials %}
-    <div v-for="item of testimonials" class="testimonial">
-      <p class="testimonial-meta">On <time>{{ item.date }}</time>, {{ item.displayName }} said: </p>
-      <h3>{{ item.title }}</h3>
-      <div>{{ item.body | marked | safe }}</div>
-    </div>
+    <p class="testimonial-meta">On <time>{{ item.date | postDate }}</time>,
+      {{ item.displayName }} said:
+    </p>
+    <h3>"{{ item.title }}"</h3>
+    <div>{{ item.body | marked | safe }}</div>
     {% endfor %}
+  </div>
+  <h2 class="section-title">Opening hours</h2>
+  <div class="hours">
+    {% for day in info.hours %}
+    <p> {{day}} </p>
+    {% endfor %}
+  </div>
 
-    <h2 class="section-title">Opening hours</h2>
-    <div class="hours">
-      {% for day in info.hours %}
-      <p> {{day}} </p>
-      {% endfor %}
-    </div>
-
-    <h2 class="section-title">We're ever so social</h2>
-    <ul>
-      {% for item in info.social %}
-      <li> {{item.channel}} : <a href="{{ item.url }}">{{ item.displayName}} </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </main>
-<header>
+  <h2 class="section-title">We're ever so social</h2>
+  <ul>
+    {% for item in info.social %}
+    <li> {{item.channel}} : <a href="{{ item.url }}">{{ item.displayName }} </a>
+    </li>
+    {% endfor %}
+  </ul>
+</main>

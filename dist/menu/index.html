@@ -10,41 +10,28 @@
   <body>
     <div class="home-grid">
       <aside class="sidebar">
-        <a href="/">
-          <img src="/images/logo.svg" alt="" />
-        </a>
-        <nav>
-        <ul class="main-nav-list">
-          <li class="nav-item">
-            <a href="/" class="nav-item-link">
-              <img src="src/images/about-icon.svg" alt="sample alt" />
-              <span>Menu</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav-list">
-          <li class="nav-item">
-            <a href="/menu" class="nav-item-link">
-              <img src="/images/menu-icon.svg" alt="sample alt" />
-              <span>Menu</span>
-            </a>
-          </li>
-        </ul>
-        </nav>
-        <footer class="main-footer">
-          <p class="main-footer-text">
-            Repo:
-            <a href="https://github.com/bencodezen/demo-restaurant-vue3-ts-contentful"
-              >GitHub</a
-            >
-          </p>
-          <p class="main-footer-text">
-            Built with <a href="https://v3.vuejs.org">Vue 3</a> and
-            <a href="https://www.netlify.com">Netlify</a>
-          </p>
-        </footer>
+        <header>
+          <a href="/" class="logo-home" title="Restaurant info and reviews">
+            <img src="/images/logo.svg" />
+          </a>
+          <ul class="main-nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-item-link">
+                <img src="/images/about-icon.svg" alt="sample alt" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/menu" class="nav-item-link">
+                <img src="/images/menu-icon.svg" alt="sample alt" />
+                <span>Menu</span>
+              </a>
+            </li>
+          </ul>
+        </header>
       </aside>
-      <main class="menu-page">
+      <div class="page">
+        <main class="menu-page">
   <h1 class="section-title">Menu</h1>
   <div class="section-intro">The menu for the restaurant</div>
   
@@ -196,6 +183,22 @@
   
 </main>    
 
+        <footer class="main-footer">
+          <p class="main-footer-text">
+            Made as an example of building a site with a headless CMS
+          </p>
+          <p>
+            Repo: 
+            <a href=
+              "https://github.com/tzmanics/demo-restaurant-11ty-contentful"
+            >GitHub</a>
+          </p>
+          <p class="main-footer-text">
+            Built with <a href="https://www.11ty.dev/">Eleventy</a> and
+            <a href="https://www.netlify.com">Netlify</a>
+          </p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
