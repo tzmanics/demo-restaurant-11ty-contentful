@@ -82,20 +82,9 @@ a:focus {
 ul {
   list-style: none;
 }
-.home-grid {
-  margin-left: 200px;
-}
 .sidebar {
   background-color: #fff;
-  border-right: solid 1px var(--secondary-accent-color);
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  grid-template-rows: 200px 1fr 75px;
-  border-right: 1px solid #222;
+  border-right: solid 1px #ccc;
 }
 .logo-home {
   display: block;
@@ -133,10 +122,10 @@ ul {
   align-items: center;
   height: 100px;
   list-style-type: none;
-  border-top: 1px solid #222;
+  border-top: 1px solid #ccc;
 }
 .nav-item:last-child {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #ccc;
 }
 .nav-item-link {
   display: grid;
@@ -210,4 +199,26 @@ ul {
 .menu-item-title {
   margin: 0;
   font-size: 20px;
+}
+.main-footer {
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .main-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    max-width: 400px;
+    padding: 2rem 0;
+    background-color: transparent;
+    border-style: none;
+  }
+}
+.main-footer-text {
+  margin: 0 4rem 0.5rem;
 }

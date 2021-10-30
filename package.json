@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful.git"
+    "url": "git+https://github.com/tzmanics/demo-restaurant-11ty-contentful.git"
   },
   "keywords": [
     "eleventy",
@@ -22,9 +22,9 @@
   "author": "Tara Z. Manicsic <tzmanics@gmail.dev> (https://tzmanics.dev/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful/issues"
+    "url": "https://github.com/tzmanics/demo-restaurant-11ty-contentful/issues"
   },
-  "homepage": "https://github.com/tzmanics/sanbox_demo-restaurant-11ty-contentful#readme",
+  "homepage": "https://github.com/tzmanics/demo-restaurant-11ty-contentful#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   },

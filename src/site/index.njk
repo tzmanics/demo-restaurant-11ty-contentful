@@ -5,17 +5,19 @@ layout: layouts/base.njk
 <main>
   <h1 class="section-title">{{ info.name }}</h1>
   <p class="section-strapline">{{ info.strapline }}</p>
-  <div class="section-intro"> </div>
-  <h2 class="section-title">Our diners say nice things</h2>
-  <div class="testimonial">
-    {% for item in testimonials %}
-    <p class="testimonial-meta">On <time>{{ item.date | postDate }}</time>,
-      {{ item.displayName }} said:
-    </p>
-    <h3>"{{ item.title }}"</h3>
-    <div>{{ item.body | marked | safe }}</div>
-    {% endfor %}
+  <div class="section-intro">
+    {{page.body}}
   </div>
+  <h2 class="section-title">Our diners say nice things</h2>
+    {% for item in testimonials %}
+    <div class="testimonial">
+      <p class="testimonial-meta">On <time>{{ item.date | postDate }}</time>,
+        {{ item.displayName }} said:
+      </p>
+      <h3>{{ item.title }}</h3>
+      <div>{{ item.body | marked | safe }}</div>
+    </div>
+    {% endfor %}
   <h2 class="section-title">Opening hours</h2>
   <div class="hours">
     {% for day in info.hours %}
