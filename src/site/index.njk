@@ -6,7 +6,7 @@ layout: layouts/base.njk
   <h1 class="section-title">{{ info.name }}</h1>
   <p class="section-strapline">{{ info.strapline }}</p>
   <div class="section-intro">
-    {{page.body}}
+    {{ pages.home.body }}
   </div>
   <h2 class="section-title">Our diners say nice things</h2>
     {% for item in testimonials %}
@@ -28,7 +28,7 @@ layout: layouts/base.njk
   <h2 class="section-title">We're ever so social</h2>
   <ul>
     {% for item in info.social %}
-    <li> {{item.channel}} : <a href="{{ item.url }}">{{ item.displayName }} </a>
+    <li> {{ item.channel }} : <a href="{{ item.url }}">{{ item.displayName }} </a>
     </li>
     {% endfor %}
   </ul>
